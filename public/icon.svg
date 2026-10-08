@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B4D3E" />
+      <stop offset="50%" stop-color="#143A2E" />
+      <stop offset="100%" stop-color="#0E2820" />
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4EBA88" />
+      <stop offset="50%" stop-color="#2D9A69" />
+      <stop offset="100%" stop-color="#176B4D" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8EAD9B" />
+      <stop offset="100%" stop-color="#34A853" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+  
+  <!-- Rounded Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  
+  <!-- Inner Glow Ring -->
+  <rect x="12" y="12" width="488" height="488" rx="100" fill="none" stroke="#8EAD9B" stroke-opacity="0.15" stroke-width="2" />
+  
+  <!-- Botanical Leaf Icon with Stem and Venation -->
+  <g filter="url(#shadow)" transform="translate(256, 256) scale(1.1) translate(-256, -256)">
+    <!-- Main leaf body -->
+    <path d="M256 96 C360 96 400 176 400 272 C400 376 304 416 256 416 C208 416 112 376 112 272 C112 176 152 96 256 96 Z" fill="url(#leafGrad)" />
+    
+    <!-- Central leaf rib/stem -->
+    <path d="M256 96 C256 190 256 320 256 448" stroke="#E4F0E7" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.9" />
+    
+    <!-- Left lateral veins -->
+    <path d="M256 170 C220 185 170 210 150 240" stroke="#E4F0E7" stroke-width="7" stroke-linecap="round" opacity="0.65" />
+    <path d="M256 240 C215 258 175 285 160 320" stroke="#E4F0E7" stroke-width="7" stroke-linecap="round" opacity="0.65" />
+    <path d="M256 310 C225 328 190 350 180 375" stroke="#E4F0E7" stroke-width="6" stroke-linecap="round" opacity="0.65" />
+    
+    <!-- Right lateral veins -->
+    <path d="M256 170 C292 185 342 210 362 240" stroke="#E4F0E7" stroke-width="7" stroke-linecap="round" opacity="0.65" />
+    <path d="M256 240 C297 258 337 285 352 320" stroke="#E4F0E7" stroke-width="7" stroke-linecap="round" opacity="0.65" />
+    <path d="M256 310 C287 328 322 350 332 375" stroke="#E4F0E7" stroke-width="6" stroke-linecap="round" opacity="0.65" />
+    
+    <!-- Sprout leaf accent -->
+    <path d="M256 96 C300 70 340 90 350 130 C320 140 280 120 256 96 Z" fill="url(#accentGrad)" opacity="0.95" />
+  </g>
+</svg>

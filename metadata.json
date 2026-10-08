@@ -1,0 +1,12 @@
+{
+  "id": "plantcare-ai",
+  "name": "Remix PlantCare AI",
+  "description": "AI-powered crop and plant care assistant for farmers with multi-language voice doubts assistance, disease diagnosis, and tailored farming solutions.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
